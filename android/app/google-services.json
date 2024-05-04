@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "920723721120",
+    "project_id": "zoozoowin-a8a38",
+    "storage_bucket": "zoozoowin-a8a38.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920723721120:android:e888b3871f168c0accf2c5",
+        "android_client_info": {
+          "package_name": "com.example.zoozoowin_"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBocr97sxhptrFhllzOAOL04hywAIGYeCY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
