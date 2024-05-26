@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Game1 extends StatelessWidget {
-  const Game1({Key? key}) : super(key: key);
+class Game1wait extends StatelessWidget {
+  const Game1wait({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +51,7 @@ class Game1 extends StatelessWidget {
           // Centered custom gif
           Center(
             child: Image.asset(
-              'assets/images/custom_game1_gif.gif',
+              'assets/images/DOWNLOAD NOW.gif',
               width: 500,
               height: 600,
               // Adjust width and height as needed

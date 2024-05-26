@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:zoozoowin_/game1.dart';
+import 'package:zoozoowin_/game11.dart';
+import 'package:zoozoowin_/game3.dart';
 import 'package:zoozoowin_/payment.dart'; // Import the PaymentDialog widget
+
+
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -18,6 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
       _amountInWallet -= amount;
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -191,10 +196,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     GestureDetector(
                       onTap: () {
-                        Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => Game1Screen()),
-    );
+                        _navigateToGame1(context);// Handle Game1 option
                       },
                       child: Image.asset(
                         'assets/images/Game1.png',
@@ -205,7 +207,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     SizedBox(height: 30),
                     GestureDetector(
                       onTap: () {
-                        // Handle Game2 option
+                        _navigateToGame1(context);// Handle Game2 option
                       },
                       child: Image.asset(
                         'assets/images/Game2.png',
@@ -216,7 +218,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     SizedBox(height: 30),
                     GestureDetector(
                       onTap: () {
-                        // Handle Game3 option
+                        _navigateToGame1(context);// Handle Game3 option
                       },
                       child: Image.asset(
                         'assets/images/Game3.png',
@@ -280,8 +282,10 @@ class _HomeScreenState extends State<HomeScreen> {
 
         ],
       ),
+      
     );
   }
+
 
 void _showLogoutConfirmation(BuildContext context) {
   showDialog(
@@ -463,3 +467,25 @@ class _WithdrawDialogState extends State<WithdrawDialog> {
     super.dispose();
   }
 }
+void _navigateToGame1(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Game1()), // Navigate to Game1 screen
+    );
+  }
+
+  // Method to navigate to Game2 screen
+  void _navigateToGame2(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Game1wait()), // Navigate to Game2 screen
+    );
+  }
+
+  // Method to navigate to Game3 screen
+  void _navigateToGame3(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Game1()), // Navigate to Game3 screen
+    );
+  }
