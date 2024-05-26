@@ -39,6 +39,9 @@ dependencies:
   firebase_auth: ^4.19.4
   cloud_firestore: ^4.17.2
   sms_autofill: ^2.3.1
+  http: ^1.2.1
+  flutter_stripe: ^10.1.1
+  
 
 dev_dependencies:
   flutter_test:
@@ -66,9 +69,14 @@ flutter:
     - assets/images/background.jpg
     - assets/images/language_icon.png
     - assets/images/redbg.png
-    - assets/images/plus_icon.png
     - assets/images/wallet_icon.png
-
+    - assets/images/Game1.png
+    - assets/images/Game2.png
+    - assets/images/Game3.png
+    - assets/images/foot.png
+    - assets/images/spin.png
+    - assets/images/greenslot.png
+    - assets/images/redslot.png
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
